@@ -1,18 +1,5 @@
-# jsontonestedtable
-使用json数据自动生成嵌套table
-
-#使用方法
-引入 jsontonestedtable.js
-```js
-var json = [
-	['red','blue'],
-	['big','small']
-];
-window.json2table.createHtml(json).then(function(res){
-	console.log(res);
-});
-```
-'<html><head><style type="text/css"> 
+<html>
+<style type="text/css"> 
 body,table{ 
 font-size:12px; 
 } 
@@ -46,8 +33,8 @@ padding:0 1em 0;
 background-color:#f5fafe; 
 } 
 </style> 
-</head><body>
-
+<body>
+</body>
 <script src="jsontonestedtable.js"></script>
 <script>
 var json = [
@@ -57,5 +44,5 @@ var json = [
 window.json2table.createHtml(json).then(function(res){
 	document.write('<table width="100%" class="table">'+res+'</table>');
 });
-</script><table width="100%" class="table"><tbody><tr><td rowspan="2">red</td><td rowspan="1">big</td></tr><tr><td rowspan="1">small</td></tr><tr><td rowspan="2">blue</td><td rowspan="1">big</td></tr><tr><td rowspan="1">small</td></tr></tbody></table>
-</body></html>'
+</script>
+</html>
